@@ -1,0 +1,23 @@
+modLoader="javafml" #mandatory
+loaderVersion="[33,)" #mandatory
+license="MIT"
+[[mods]] #mandatory
+modId="${modid}" #mandatory
+version="${file.jarVersion}" #mandatory
+displayName="${displayname}" #mandatory
+authors="Tom_The_Geek" #optional
+description='''
+${description}
+'''
+[[dependencies.${modid}]] #optional
+    modId="forge" #mandatory
+    mandatory=true #mandatory
+    versionRange="[33,)" #mandatory
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.${modid}]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.2]"
+    ordering="NONE"
+    side="BOTH"
